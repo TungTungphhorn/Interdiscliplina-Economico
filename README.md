@@ -1,1 +1,3 @@
 # Interdiscliplina-Economico
+
+Este site educativo integra quatro disciplinas para promover educação financeira acessível. Desenvolvido com HTML, CSS e JavaScript puro, oferece um simulador de orçamento interativo que calcula receitas e despesas. Aborda consumo consciente através de dicas práticas e infográficos sobre desigualdades regionais. Inclui um glossário com termos financeiros essenciais, tornando conceitos complexos mais compreensíveis. A proposta combina organização financeira com reflexão crítica sobre padrões de consumo, preparando os usuários para decisões financeiras mais conscientes e sustentáveis.

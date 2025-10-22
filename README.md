@@ -1,1 +1,1 @@
-# Interdiscliplina-Econ-mico
+# Interdiscliplina-Economico

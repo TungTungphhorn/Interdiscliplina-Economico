@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economia Doméstica e Finanças Pessoais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Economia Doméstica e Finanças Pessoais</h1>
+        <p>Um guia interdisciplinar para organizar suas finanças e entender o consumo consciente</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#simulador">Simulador</a></li>
+            <li><a href="#dicas">Dicas</a></li>
+            <li><a href="#infograficos">Infográficos</a></li>
+            <li><a href="#glossario">Glossário</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio">
+        <h2>Bem-vindo ao seu guia financeiro!</h2>
+        <p>Este site foi desenvolvido para ajudar você a entender e organizar suas finanças pessoais, integrando conhecimentos de Matemática, Geografia, Sociologia e Português.</p>
+        
+        <div class="cards-container">
+            <div class="card">
+                <h3>Matemática</h3>
+                <p>Aprenda a calcular seu orçamento mensal, entender porcentagens e interpretar gráficos financeiros.</p>
+            </div>
+            <div class="card">
+                <h3>Geografia</h3>
+                <p>Entenda a relação entre consumo e espaço urbano, e as desigualdades econômicas regionais.</p>
+            </div>
+            <div class="card">
+                <h3>Sociologia</h3>
+                <p>Reflita sobre consumo consciente, cultura do consumo e o impacto social das finanças.</p>
+            </div>
+            <div class="card">
+                <h3>Português</h3>
+                <p>Aprimore sua comunicação com textos explicativos e um glossário de termos financeiros.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador">
+        <h2>Simulador de Orçamento Mensal</h2>
+        <div class="form-container">
+            <form id="form-orcamento">
+                <div class="form-group">
+                    <label for="renda">Renda Mensal (R$)</label>
+                    <input type="number" id="renda" required min="0" step="0.01">
+                </div>
+                
+                <h3>Despesas Fixas</h3>
+                <div class="form-group">
+                    <label for="moradia">Moradia (aluguel/condomínio/financiamento)</label>
+                    <input type="number" id="moradia" min="0" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="transporte">Transporte</label>
+                    <input type="number" id="transporte" min="0" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="alimentacao">Alimentação</label>
+                    <input type="number" id="alimentacao" min="0" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="saude">Saúde</label>
+                    <input type="number" id="saude" min="0" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="educacao">Educação</label>
+                    <input type="number" id="educacao" min="0" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="lazer">Lazer</label>
+                    <input type="number" id="lazer" min="0" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label for="outros">Outras Despesas</label>
+                    <input type="number" id="outros" min="0" step="0.01">
+                </div>
+                
+                <button type="submit">Calcular Orçamento</button>
+            </form>
+            
+            <div class="resultados" id="resultados">
+                <h3>Resultado do seu Orçamento</h3>
+                <p id="saldo"></p>
+                
+                <h4>Distribuição das Despesas</h4>
+                <div id="grafico-despesas"></div>
+                
+                <h4>Recomendações Financeiras</h4>
+                <div id="recomendacoes"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dicas">
+        <h2>Dicas de Consumo Consciente</h2>
+        <div class="dicas-container">
+            <div class="dica">
+                <h3>Planeje suas compras</h3>
+                <p>Faça uma lista antes de ir ao mercado e evite compras por impulso. Isso ajuda a reduzir desperdícios e economizar dinheiro.</p>
+            </div>
+            <div class="dica">
+                <h3>Compare preços</h3>
+                <p>Pesquise em diferentes estabelecimentos antes de comprar. Use aplicativos e sites de comparação para encontrar melhores ofertas.</p>
+            </div>
+            <div class="dica">
+                <h3>Reduza o consumo de energia</h3>
+                <p>Desligue aparelhos da tomada quando não estiver usando, troque lâmpadas por LED e aproveite a luz natural sempre que possível.</p>
+            </div>
+            <div class="dica">
+                <h3>Evite o desperdício de alimentos</h3>
+                <p>Planeje suas refeições, armazene corretamente os alimentos e reaproveite sobras em novas receitas.</p>
+            </div>
+            <div class="dica">
+                <h3>Repense suas necessidades</h3>
+                <p>Antes de comprar, pergunte-se: "Eu realmente preciso disso?" Isso ajuda a evitar consumo desnecessário.</p>
+            </div>
+            <div class="dica">
+                <h3>Invista em qualidade</h3>
+                <p>Às vezes, pagar um pouco mais por um produto de melhor qualidade pode ser mais econômico a longo prazo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="infograficos">
+        <h2>Infográficos com Dados Econômicos</h2>
+        <div class="infograficos-container">
+            <div class="infografico">
+                <h3>Distribuição Ideal do Orçamento</h3>
+                <div class="grafico-circular"></div>
+                <div class="legenda">
+                    <div class="item-legenda">
+                        <div class="cor-legenda" style="background-color: #3498db;"></div>
+                        <span>Moradia (30%)</span>
+                    </div>
+                    <div class="item-legenda">
+                        <div class="cor-legenda" style="background-color: #2ecc71;"></div>
+                        <span>Alimentação (20%)</span>
+                    </div>
+                    <div class="item-legenda">
+                        <div class="cor-legenda" style="background-color: #e74c3c;"></div>
+                        <span>Transporte (20%)</span>
+                    </div>
+                    <div class="item-legenda">
+                        <div class="cor-legenda" style="background-color: #f39c12;"></div>
+                        <span>Saúde (15%)</span>
+                    </div>
+                    <div class="item-legenda">
+                        <div class="cor-legenda" style="background-color: #9b59b6;"></div>
+                        <span>Outros (15%)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="infografico">
+                <h3>Desigualdade Regional no Brasil</h3>
+                <p>O Sudeste concentra 55% do PIB nacional, enquanto o Norte tem apenas 5%.</p>
+                <div class="grafico-barras">
+                    <div class="barra-container">
+                        <div class="barra-regiao" style="height: 120px; background-color: #3498db;"></div>
+                        <span>Sudeste</span>
+                    </div>
+                    <div class="barra-container">
+                        <div class="barra-regiao" style="height: 80px; background-color: #2ecc71;"></div>
+                        <span>Sul</span>
+                    </div>
+                    <div class="barra-container">
+                        <div class="barra-regiao" style="height: 60px; background-color: #e74c3c;"></div>
+                        <span>Nordeste</span>
+                    </div>
+                    <div class="barra-container">
+                        <div class="barra-regiao" style="height: 40px; background-color: #f39c12;"></div>
+                        <span>Centro-Oeste</span>
+                    </div>
+                    <div class="barra-container">
+                        <div class="barra-regiao" style="height: 20px; background-color: #9b59b6;"></div>
+                        <span>Norte</span>
+                    </div>
+                </div>
+            </div>
+            <div class="infografico">
+                <h3>Evolução do Endividamento Familiar</h3>
+                <p>Percentual de famílias brasileiras com dívidas:</p>
+                <div class="evolucao-endividamento">
+                    <div class="ano-dados">
+                        <div class="info-ano">
+                            <span>2020</span>
+                            <span>62%</span>
+                        </div>
+                        <div class="grafico">
+                            <div class="barra" style="width: 62%; background-color: #3498db;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="ano-dados">
+                        <div class="info-ano">
+                            <span>2021</span>
+                            <span>67%</span>
+                        </div>
+                        <div class="grafico">
+                            <div class="barra" style="width: 67%; background-color: #2ecc71;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="ano-dados">
+                        <div class="info-ano">
+                            <span>2022</span>
+                            <span>71%</span>
+                        </div>
+                        <div class="grafico">
+                            <div class="barra" style="width: 71%; background-color: #e74c3c;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="glossario">
+        <h2>Glossário de Termos Financeiros</h2>
+        <div class="glossario-container">
+            <div class="termo">
+                <div class="termo-header">
+                    <span>Orçamento</span>
+                    <span>+</span>
+                </div>
+                <div class="termo-conteudo">
+                    <p>Planejamento financeiro que estima receitas e despesas por um período determinado, geralmente um mês.</p>
+                </div>
+            </div>
+            <div class="termo">
+                <div class="termo-header">
+                    <span>Renda</span>
+                    <span>+</span>
+                </div>
+                <div class="termo-conteudo">
+                    <p>Total de valores recebidos por uma pessoa ou família, provenientes de salários, aluguéis, investimentos, etc.</p>
+                </div>
+            </div>
+            <div class="termo">
+                <div class="termo-header">
+                    <span>Despesa</span>
+                    <span>+</span>
+                </div>
+                <div class="termo-conteudo">
+                    <p>Gastos realizados por uma pessoa ou família para suprir necessidades e desejos.</p>
+                </div>
+            </div>
+            <div class="termo">
+                <div class="termo-header">
+                    <span>Poupança</span>
+                    <span>+</span>
+                </div>
+                <div class="termo-conteudo">
+                    <p>Parte da renda que não é gasta no período, reservada para uso futuro.</p>
+                </div>
+            </div>
+            <div class="termo">
+                <div class="termo-header">
+                    <span>Investimento</span>
+                    <span>+</span>
+                </div>
+                <div class="termo-conteudo">
+                    <p>Aplicação de recursos financeiros com o objetivo de obter retorno no futuro.</p>
+                </div>
+            </div>
+            <div class="termo">
+                <div class="termo-header">
+                    <span>Juros</span>
+                    <span>+</span>
+                </div>
+                <div class="termo-conteudo">
+                    <p>Remuneração cobrada pelo empréstimo de dinheiro ou custo do dinheiro emprestado.</p>
+                </div>
+            </div>
+            <div class="termo">
+                <div class="termo-header">
+                    <span>Inflação</span>
+                    <span>+</span>
+                </div>
+                <div class="termo-conteudo">
+                    <p>Aumento generalizado e contínuo dos preços de bens e serviços na economia.</p>
+                </div>
+            </div>
+            <div class="termo">
+                <div class="termo-header">
+                    <span>Consumo Consciente</span>
+                    <span>+</span>
+                </div>
+                <div class="termo-conteudo">
+                    <p>Prática de consumir de forma responsável, considerando os impactos ambientais, sociais e econômicos.</p>
+                </div>
+            </div>
+            <div class="termo">
+                <div class="termo-header">
+                    <span>Endividamento</span>
+                    <span>+</span>
+                </div>
+                <div class="termo-conteudo">
+                    <p>Situação em que uma pessoa ou família possui dívidas a pagar.</p>
+                </div>
+            </div>
+            <div class="termo">
+                <div class="termo-header">
+                    <span>Reserva de Emergência</span>
+                    <span>+</span>
+                </div>
+                <div class="termo-conteudo">
+                    <p>Valor guardado para cobrir despesas inesperadas, como problemas de saúde ou perda de emprego.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Atividade Interdisciplinar - Economia Doméstica e Finanças Pessoais</p>
+        <p>Disciplinas: Matemática, Geografia, Sociologia, Português</p>
+        <p>Desenvolvido com HTML, CSS e JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
